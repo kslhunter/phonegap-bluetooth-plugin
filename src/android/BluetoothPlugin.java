@@ -673,6 +673,7 @@ public class BluetoothPlugin extends CordovaPlugin
 			if(_bluetooth.isConnectionManaged())
 			{
 				_bluetooth.stopConnectionManager();
+				_ioCallback = null;
 				callbackCtx.success();
 			}
 			else
